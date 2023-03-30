@@ -120,7 +120,7 @@ $('#toggleLang').on('click', function () {
         if (textList[index] === "我是一個熱愛新技術和解決問題的人，也熱愛生活、大自然。") {
             textList = [
                 "Love new technology and problem solving, but also love life.",
-                "I enjoy learning, coding, and problem-solving",                             // 我喜歡學習、編碼和解決問題。
+                "I enjoy learning, coding, and problem-solving",                            // 我喜歡學習、編碼和解決問題。
                 "Coding is my gateway to a world of endless possibilities and exploration.",//程式是我通往無限可能和探索世界的門戶。
             ];
         } else {
