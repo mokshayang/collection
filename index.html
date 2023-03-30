@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Moksha Yang</title>
+    <!-- title img -->
+    <link rel="icon" type="image/x-icon" href="">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- jQ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none"> 𝄞 <i>Log</i>o 𝄞</span>
+            <span class="d-none d-lg-block">
+                <!-- 個人照片 -->
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/me.jpg" alt="personalPhoto">
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" id="about_header" href="#about">關於我</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" id="experience_header"
+                        href="#experience">經歷</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" id="education_header"
+                        href="#education">學歷</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" id="skills_header" href="#skills">技能</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" id="work_header" href="#work">作品集</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" id="interests_header"
+                        href="#interests">興趣</a></li>
+                <li class="nav-item" id="toggleLang"> 中文</li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0" id="name">
+                    楊偉至
+                </h1>
+                <div id="text-container"></div>
+                <h2 class="mb-0">
+                    <span style="font-size:3rem">🚹♌🐑🎸</span>
+                </h2>
+                <div class="subheading my-4 addr" id="addr">
+                    新北市泰山區明志路三段204巷12號3樓322室
+                </div>
+                <!-- <div class="lead mb-1 " id="character" >
+                    熱愛新技術和解決問題，也熱愛生活、大自然。
+                </div> -->
+                <div class="social-icons">
+                    <a href="mailto:dullboy812@yahoo.com.tw" class="social-icon" href="#!"><i
+                            class="bi bi-envelope"></i></a>
+                    <a href="tel:+886-975-398-680" class="social-icon" href="#!"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://github.com/mokshayang" class="social-icon"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5" id="experience_title">經歷</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0" id="tai">泰山職訓局</h3>
+                        <div class="subheading mb-3" id="ski">PHP 網頁設計</div>
+                        <p>
+                        <div style="font-size:40px;" class="show">
+                            <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                            <li class="list-inline-item"><i class="bi bi-bootstrap"></i></li>
+                            <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                            <li class="list-inline-item"><i class="fa-brands fa-php"></i></li>
+                            <li class="list-inline-item"><i class="fa-brands fa-laravel"></i></li>
+                            <li class="list-inline-item"><i class="fa-brands fa-square-github"></i></li>
+                        </div>
+
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary" id="tai_time">2022年9月 - 2023年3月</span></div>
+
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0" id="iot">物聯網</h3>
+                        <div class="subheading mb-3" id="iot_1">現場與前端</div>
+                        <p id="iot_content" >
+                            統整現場設備數位資訊，建立SCADA，決定監控點位，分析設備異常，提高維修能量。在公司內網查看設備狀況
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary" id="iot_time">2018年9月 - 2022年6月</span></div>
+
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0" id="auto">自動化</h3>
+                        <div class="subheading mb-3" id="auto_1">PLC 與 配線</div>
+                        <p id="auto_content">
+                            設備自動化工程，測試、安裝、維護
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary" id="auto_time">2012年2月 - 2018年2月</span></div>
+                </div>
+
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5" id="education_title">學歷</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0" id="uni">明新科技大學</h3>
+                        <div class="subheading mb-3" id="department">機械工程系</div>
+
+                        <p id="score">平均成績 84</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary" id="uni_time">2005年9月 - 2007年6月</span></div>
+                </div>
+
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 id="skills_title">技能</h2>
+                <!-- <div class="subheading mb-3 bb">程式語言與工具</div> -->
+
+                <ul class="list-group col-12 mx-auto" style="width:90%;">
+                    <div class="skill">
+                        <div class="subheading  bb" id="front">前端</div>
+                        <!-- html5 -->
+                        <li class="d-flex " style="min-height:85px;">
+                            <div class="col-12 cc">
+                                <img src="img/html.png" class="ii">
+                                <img src="img/css.png" class="ii">
+                                <img src="img/Bootstrap.png" class="ii" style="padding-top:6px;">
+                                <img src="img/js.png" class="ii">
+                                <img src="img/jquery.png"  class="jq">
+                            </div>
+                            <!-- <div class="col-1 "></div> -->
+                            <!-- <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="95">
+                                    <div class="tag"></div>
+                                    <div class="bar">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </li>
+                        <!-- css3 -->
+                        <!-- <li class="d-flex list-group-item list-group-item-light list-group-item-action my-3 li_sh in_show "
+                            style="min-height:28px;">
+                            <div class="col-2 cc"><img src="img/css.png" style="width:60px;"></div>
+
+                            <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="90">
+                                    <div class="tag "></div>
+                                    <div class="bar ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- bootstrap -->
+                        <!-- <li class="d-flex list-group-item list-group-item-light list-group-item-action my-3 li_sh in_show "
+                            style="min-height:28px;">
+                            <div class="col-2 cc"><img src="img/Bootstrap.png" style="width:60px;"></div>
+                            <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="80">
+                                    <div class="tag "></div>
+                                    <div class="bar ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- JS -->
+                        <!-- <li class="d-flex list-group-item list-group-item-light list-group-item-action my-3 li_sh in_show "
+                            style="min-height:85px;">
+                            <div class="col-2 cc"><img src="img/js.png" style="width:60px;"></div>
+                            <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="76">
+                                    <div class="tag "></div>
+                                    <div class="bar ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- JQ -->
+                        <!-- <li class="d-flex list-group-item list-group-item-light list-group-item-action my-3 li_sh in_show "
+                            style="min-height:85px;">
+                            <div class="col-2 cc"><img src="img/jquery.png" class="jq"></div>
+                            <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="85">
+                                    <div class="tag "></div>
+                                    <div class="bar ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                    </div>
+                    <div class="skill">
+                        <!-- php -->
+                        <div class="subheading  bb" id="back">後端</div>
+                        <li class="d-flex " style="min-height:85px;">
+                            <div class="col-12 cc">
+                                <img src="img/php.png" class="php">
+                                <img src="img/laravel.png" class="lara" >
+                                <img src="img/db.png" class="db" >
+                                <img src="img/gibhub.png" class="jq">
+                            </div>
+                            
+                            <!-- <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="88">
+                                    <div class="tag "></div>
+                                    <div class="bar ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </li>
+                        <!-- laravel -->
+                        <!-- <li class="d-flex list-group-item list-group-item-light list-group-item-action my-3 li_sh in_show "
+                            style="min-height:85px;">
+                            <div class="col-2 cc"><img src="img/laravel.png" style="width:50px;padding-top:10px"></div>
+                            <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="68">
+                                    <div class="tag "></div>
+                                    <div class="bar ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- mariaDB -->
+                        <!-- <li class="d-flex list-group-item list-group-item-light list-group-item-action my-3 li_sh in_show "
+                            style="min-height:85px;">
+                            <div class="col-2 cc"><img src="img/db.png" style="width:68px;"></div>
+                            <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="85">
+                                    <div class="tag "></div>
+                                    <div class="bar ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- gitHub -->
+                        <!-- <li class="d-flex list-group-item list-group-item-light list-group-item-action my-3 li_sh in_show "
+                            style="min-height:85px;">
+                            <div class="col-2 cc"><img src="img/gibhub.png" class="jq"></div>
+                            <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="75">
+                                    <div class="tag "></div>
+                                    <div class="bar ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                    </div>
+
+                    <!-- photoshop -->
+                    <div class="skill">
+                        <div class="subheading  bb" id="design">影像</div>
+                        <li class="d-flex" style="min-height:85px;">
+                            <div class="col-12 cc">
+                                <img src="img/Ps.png" class="ps">
+                                &nbsp;&nbsp;
+                                <img src="img/ai.png" class="ps">
+                            </div>
+                            <!-- <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="65">
+                                    <div class="tag "></div>
+                                    <div class="bar ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </li>
+                        <!-- Illustrator -->
+                        <!-- <li class="d-flex list-group-item list-group-item-light list-group-item-action my-3 li_sh in_show "
+                            style="min-height:85px;">
+                            <div class="col-2 cc"><img src="img/ai.png" style="width:50px;padding-top:8px;"></div>
+                            <div class="col-10 d-flex align-items-center">
+                                <div class="tool-chart col-12  rounded" data-progress="72">
+                                    <div class="tag "></div>
+                                    <div class="bar ">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> -->
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- 作品集-->
+        <!-- <section class="resume-section " id="work"> -->
+        <section class=" resume-section" id="work">
+            <div class="resume-section-content">
+                <h2 class="mb-1" id="work_title">作品集</h2>
+                <div class="row">
+                    <div class="asb">
+
+
+                        <div class="col-12 col-sm-6 col-lg-4 my-3 c in_card in_show_cards justify-content-center">
+                            <!-- 卡片正面 css 進圖-->
+                            <div class="cards cardfront" style="cursor: pointer;"></div>
+                            <!-- 卡片背面 -->
+                            <div class="cards cardback">
+                                <div class="card shadow radio" style="width: 216px; height:300px; overflow:hidden;">
+                                    <div class="pick">
+                                        <div class="mm ">
+                                            <!-- a 包 img 進作品集 -->
+                                            <a href="./calecdar/">
+                                                <img src="./img/calendar.jpg" alt="photo">
+                                            </a>
+                                        </div>
+                                        <div style="text-align: center;" id="calendar">萬 年 曆</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4 my-3 c in_card in_show_cards justify-content-center">
+                            <!-- 卡片正面 css 進圖-->
+                            <div class="cards cardfront" style="cursor: pointer;"></div>
+                            <!-- 卡片背面 -->
+                            <div class="cards cardback">
+                                <div class="card shadow radio" style="width: 216px; height:300px; overflow:hidden;">
+                                    <div class="pick">
+                                        <div class="mm ">
+                                            <!-- a 包 img 進作品集 -->
+                                            <a href="./survey_tw/">
+                                                <img src="./img/s3.jpg" alt="photo">
+                                            </a>
+                                        </div>
+                                        <div style="text-align: center;" id="vote">投 票 系 統</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4 my-3 c in_card in_show_cards justify-content-center">
+                            <!-- 卡片正面 css 進圖-->
+                            <div class="cards cardfront" style="cursor: pointer;"></div>
+                            <!-- 卡片背面 -->
+                            <div class="cards cardback">
+                                <div class="card shadow radio" style="width: 216px; height:300px; overflow:hidden;">
+                                    <div class="pick">
+                                        <div class="mm ">
+                                            <!-- a 包 img 進作品集 -->
+                                            <a href="./bootstrap_hw/">
+                                                <img src="./img/quitar.jpg" alt="photo">
+                                            </a>
+                                        </div>
+                                        <div style="text-align: center;" id="guitar">吉 他 簡 介</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-lg-4 my-3 c in_card in_show_cards justify-content-center">
+                            <!-- 卡片正面 css 進圖-->
+                            <div class="cards cardfront" style="cursor: pointer;"></div>
+                            <!-- 卡片背面 -->
+                            <div class="cards cardback">
+                                <div class="card shadow radio" style="width: 216px; height:300px; overflow:hidden;">
+                                    <div class="pick">
+                                        <div class="mm ">
+                                            <!-- a 包 img 進作品集 -->
+                                            <a href="./school/">
+                                                <img src="./img/student.jpg" alt="photo">
+                                            </a>
+                                        </div>
+                                        <div style="text-align: center;" id="student">學 生 管 理</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- </section> -->
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-3" id="interests_title">興趣</h2>
+                <div class="flex-md-row">
+                    <h3 id="gui">吉他</h3>
+                    <p id="gui_content">
+                        高興的時候，難過的時候，一個人的時候，手癢的時候，彈奏喜歡的曲子，心情可以沉澱下來。
+                    </p>
+                </div>
+                <br><br>
+                <div class="flex-md-row">
+                    <h3 id="swim">游泳</h3>
+                    <p class="mb-0" id="swim_content">
+                        躺在水裡，很舒服 ； 但疫情開始後，就沒去了。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/str.js"></script>
+</body>
+
+</html>
+<script>
+
+</script>
