@@ -86,22 +86,22 @@ let langData = {
         "swim_content": "Lying in the water is very comfortable, but I haven't gone since the outbreak of the pandemic.",
     }
 };
-let textList = [
-    "我是一個熱愛新技術和解決問題的人，也熱愛生活、大自然。",
-    "學習、或是實作，都享受在其中。",
-    "一個無限可能和探索的世界。",
+// 定義要顯示的文字內容
+let  textList = [
+    "Love new technology and problem solving, but also love life.",
+    "I enjoy learning, coding, and problem-solving.",                             // 我喜歡學習、編碼和解決問題。
+    "Coding is my gateway to a world of endless possibilities and exploration.",//程式是我通往無限可能和探索世界的門戶。
 ];
 let index = 0;
 
 // 設置默認
-let defaultLang = 'en';
+let defaultLang = 'zh';
 
 // 頁面載入時
 Object.keys(langData[defaultLang]).forEach(function (key) {
     let selector = '#' + key;
     let text = langData[defaultLang][key];
     $(selector).text(text);
-
 });
 $('#toggleLang').text(langData[defaultLang]['toggle']);
 
@@ -113,14 +113,12 @@ $('#toggleLang').on('click', function () {
         let selector = '#' + key;
         let text = langData[newLang][key];
         $(selector).text(text);
-
     });
     $('#toggleLang').text(langData[newLang]['toggle']);
- 
         if (textList[index] === "我是一個熱愛新技術和解決問題的人，也熱愛生活、大自然。") {
             textList = [
                 "Love new technology and problem solving, but also love life.",
-                "I enjoy learning, coding, and problem-solving",                            // 我喜歡學習、編碼和解決問題。
+                "I enjoy learning, coding, and problem-solving.",                             // 我喜歡學習、編碼和解決問題。
                 "Coding is my gateway to a world of endless possibilities and exploration.",//程式是我通往無限可能和探索世界的門戶。
             ];
         } else {
@@ -130,22 +128,8 @@ $('#toggleLang').on('click', function () {
                 "一個無限可能和探索的世界。",
             ];
         }
-       
-
 });
 
-
-
-
-// 定義要顯示的文字內容
-
-// textList = [
-//     "Love new technology and problem solving, but also love life.",
-//     "I love to code and explore new technologies.",
-//     "Programming is more than just a job or career for me, it's a true passion.",
-// ];
-
-// 定義光標顯示/隱藏的函數
 function blinkCursor(show) {
     let container = $("#text-container");
     if (show) {
@@ -158,6 +142,7 @@ function blinkCursor(show) {
 // 定義寫字的函數
 function writeText(text, callback) {
     let container = $("#text-container");
+    container.text("");
     let index = 0;
     let timer = setInterval(function () {
         container.append(text.charAt(index));
@@ -167,41 +152,52 @@ function writeText(text, callback) {
             setTimeout(function () {
                 blinkCursor(false);
                 callback();
-            }, 1000);
+            }, 0);
         }
-    }, 100);
+    }, 80);  //寫字速度
     blinkCursor(true);
 }
-
-// 定義刪除文字的函數
+// 清空文字 => 逐字遞減
+// function deleteText(callback) {
+//     let container = $("#text-container");
+//     let textLength = container.text().length;
+//     let timer = setInterval(function () {
+//         container.text(container.text().substring(0, container.text().length - 1));
+//         textLength--;
+//         if (textLength === 0) {
+//             clearInterval(timer);
+//             setTimeout(function () {
+//                 blinkCursor(true);
+//                 callback();
+//             }, 1000);
+//         }
+//     }, 100);
+//     blinkCursor(true);
+// }
+// 清空文字 => 直接清空
 function deleteText(callback) {
     let container = $("#text-container");
     let textLength = container.text().length;
-    let timer = setInterval(function () {
-        container.text(container.text().substring(0, container.text().length - 1));
-        textLength--;
-        if (textLength === 0) {
-            clearInterval(timer);
-            setTimeout(function () {
-                blinkCursor(false);
-                callback();
-            }, 1000);
-        }
-    }, 100);
+    let timer = setInterval(function() {
+      container.text(""); // 直接清空文字
+      clearInterval(timer);
+      setTimeout(function() {
+        blinkCursor(true); // 顯示光標
+        callback();
+      }, 0);
+    },3000);
     blinkCursor(true);
-}
-
-// 遞歸調用寫字和刪除文字的函數
+  }
+// 調用寫字和清空文字的函數
 function loopText(index) {
     let nextIndex = (index + 1) % textList.length;
     writeText(textList[index], function () {
-        deleteText(function () {
+        deleteText(function () {  
             setTimeout(function () {
                 loopText(nextIndex);
             }, 1000);
         });
     });
 }
-
 // 開始循環顯示文字
 loopText(0);
