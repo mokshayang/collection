@@ -56,7 +56,7 @@ let langData = {
         "work_title": 'Collection',
         "interests_title": 'Interest',
         "name": 'Moksha Yang',
-        "addr": 'No. 12-3, Ln. 204, Sec. 3, Mingzhi Rd., Taishan Dist., New Taipei City,Taiwan (R.O.C.)',
+        "addr": 'No. 322, 3F, No.12, Lane 204, Section 3, Mingzhi Road, Taishan District, New Taipei City.',
         "character": 'Love new technology and problem solving, but also love life.',
         "tai": 'Taishan Vocational Training Site',
         "ski": 'PHP Web Design',
